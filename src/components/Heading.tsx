@@ -5,7 +5,7 @@ type HeadingProps = {
   description?: string;
 };
 
-export const Heading: React.FC<HeadingProps> = ({ title, description }) => {
+const Heading = ({ title, description }: HeadingProps) => {
   return (
     <>
       <div className='px-8'>
@@ -19,3 +19,5 @@ export const Heading: React.FC<HeadingProps> = ({ title, description }) => {
     </>
   );
 };
+
+export { Heading };
